@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="AppData\" />
-    <Folder Include="Model\" />
   </ItemGroup>
 
 </Project>
