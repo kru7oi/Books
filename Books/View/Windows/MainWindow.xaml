@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Books"
         mc:Ignorable="d"
-        Title="Список книг" Height="720" Width="1280">
+        Title="Список книг" Height="720" Width="1280" WindowStartupLocation="CenterScreen" MinHeight="400" MinWidth="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80" />
@@ -31,7 +31,7 @@
 
             <Button Name="DataGridBtn" Grid.Column="4" Content="DG" Click="DataGridBtn_Click"/>
         </Grid>
-        <!-- #endrregion  -->
+        <!-- #endregion  -->
         
         <!-- #region Список книг -->
         <Frame Grid.Row="2" NavigationUIVisibility="Hidden"/>
