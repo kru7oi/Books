@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Books"
         mc:Ignorable="d"
         Title="Список книг" Height="720" Width="1280">
-    <Grid>
+    <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="80" />
             <RowDefinition Height="10" />
@@ -34,7 +34,7 @@
         <!-- #endrregion  -->
         
         <!-- #region Список книг -->
-        <Frame Grid.Row="2" NavigationUIVisibility="Hidden"/>
+        <Frame Name="MainFrame" Grid.Row="2" NavigationUIVisibility="Hidden"/>
         <!-- #endregion -->
     </Grid>
 </Window>

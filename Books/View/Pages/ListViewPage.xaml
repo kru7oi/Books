@@ -6,9 +6,23 @@
       xmlns:local="clr-namespace:Books.View.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ListViewPage">
+      Title="ListViewPage" Loaded="Page_Loaded">
 
     <Grid>
-        
+        <ListView Name="BooksLv">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="№" DisplayMemberBinding="{Binding Rank}" />
+                    <GridViewColumn Header="Название" DisplayMemberBinding="{Binding Title}" />
+                    <GridViewColumn Header="Автор" DisplayMemberBinding="{Binding Author}" />
+                    <GridViewColumn Header="Год публикации" DisplayMemberBinding="{Binding Published}" />
+                    <GridViewColumn Header="Страна" DisplayMemberBinding="{Binding Country}" />
+                    <GridViewColumn Header="Ориг. язык" DisplayMemberBinding="{Binding OriginalLanguage}" />
+                    <GridViewColumn Header="Страницы" DisplayMemberBinding="{Binding PageRange}" />
+                    <GridViewColumn Header="Кол-во слов" DisplayMemberBinding="{Binding WordCount}" />
+                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding ID}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Page>
