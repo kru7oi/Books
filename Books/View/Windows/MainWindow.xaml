@@ -34,7 +34,7 @@
         <!-- #endregion  -->
         
         <!-- #region Список книг -->
-        <Frame Grid.Row="2" NavigationUIVisibility="Hidden"/>
+        <Frame Name="MainFrame" Grid.Row="2" NavigationUIVisibility="Hidden"/>
         <!-- #endregion -->
     </Grid>
 </Window>
