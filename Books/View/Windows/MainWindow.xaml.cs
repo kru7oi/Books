@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Books.View.Pages;
+using System.Windows;
 
 namespace Books
 {
@@ -14,7 +15,7 @@ namespace Books
 
         private void ListViewBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            MainFrame.Navigate(new ListViewPage());
         }
 
         private void ListBoxBtn_Click(object sender, RoutedEventArgs e)
