@@ -6,9 +6,22 @@
       xmlns:local="clr-namespace:Books.View.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="DataGridPage">
+      Title="DataGridPage" Loaded="Page_Loaded">
 
     <Grid>
-        
+        <DataGrid Name="BooksDg" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding }"/>
+                <DataGridTextColumn Header="№" Binding="{Binding Rank}" />
+                <DataGridTextColumn Header="Название" Binding="{Binding Title}" />
+                <DataGridTextColumn Header="Автор" Binding="{Binding Author}" />
+                <DataGridTextColumn Header="Год публикации" Binding="{Binding Published}" />
+                <DataGridTextColumn Header="Страна" Binding="{Binding Country}" />
+                <DataGridTextColumn Header="Ориг. язык" Binding="{Binding OriginalLanguage}" />
+                <DataGridTextColumn Header="Страницы" Binding="{Binding PageRange}" />
+                <DataGridTextColumn Header="Кол-во слов" Binding="{Binding WordCount}" />
+                <DataGridTextColumn Header="ID" Binding="{Binding ID}" />
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>
