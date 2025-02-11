@@ -10,6 +10,9 @@
 
     <Grid>
         <ListBox Name="BooksLb">
+            <ListBox.ItemsPanelTemplate>
+                
+            </ListBox.ItemsPanelTemplate>
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid>
